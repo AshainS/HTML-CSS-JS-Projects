@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(231, 231, 231);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+}
+
+.input-container{
+    width: 300px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid rgb(192, 175, 175);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.09);
+
+}
+
+.input-container input {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background: rgb(240, 236, 236);
+    border-radius: 5px;
+    color: rgb(79, 79, 80);
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.input-container label{
+    font-size: 14px;
+    background: rgb(236, 236, 235);
+    padding: 0 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    transition: 0.3s ease;
+    color: rgb(133, 135, 136);
+    font-weight: bold;
+}
+
+.input-container input:focus ~ label,
+.input-container input:not(:placeholder-shown) ~label {
+    top: 0;
+    transform: translateY(-80%);
+    scale: 0.9;
+    color: darkcyan;
+    font-weight: bold;
+}
+
+.input-container .input-bg{
+    position: absolute;
+    inset: -2px;
+    z-index: -1;
+    border-radius: 5px;
+    transform: scaleX(0);
+}
+
+.input-container input:focus ~ .input-bg{
+    background: linear-gradient(to right, #0091ff, #ff00fb);
+    transform: scaleX(1);
+
+}
