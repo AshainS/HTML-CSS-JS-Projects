@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background-color: #1F2937;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: 700;
+}
+
+#upper-word {
+    color: aliceblue;
+}
+
+#bottom-word {
+    color: #34D399;
+}
+
+p {
+    margin: 15px 0;
+    color: #D1D5DB;
+}
+
+.container {
+    min-width: 400px;
+    padding: 40px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#generate-btn {
+    margin: 30px 0 20px;
+    background-color: #10B981;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    min-width: 150px;
+    color: #E5E7EB;
+    font-weight: bold;
+    font-size: small;
+    text-shadow: 0 0 2px black;
+}
+
+#generate-btn:hover {
+    cursor: pointer;
+    background-color: #059669;
+}
+
+#generate-btn:active {
+    background-color: #047857;
+}
+
+.pass-buttons {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#pass-display-one, #pass-display-two {
+    min-width: 45%;
+    height: 35px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: bold;
+    color: azure;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#pass-display-one, #pass-display-two:hover {
+    cursor: pointer;
+}
+
+#pass-display-one:active, #pass-display-two:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
